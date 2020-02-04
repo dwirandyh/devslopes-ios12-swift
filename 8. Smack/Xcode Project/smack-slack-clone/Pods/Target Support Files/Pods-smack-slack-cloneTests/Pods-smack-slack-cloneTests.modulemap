@@ -1,0 +1,6 @@
+framework module Pods_smack_slack_cloneTests {
+  umbrella header "Pods-smack-slack-cloneTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
