@@ -10,14 +10,16 @@
 		0BB1A4EBA4AD36A8CC7D4AAA /* Pods_smack_slack_cloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E5E763919513E40447E4FC /* Pods_smack_slack_cloneTests.framework */; };
 		68F6098B42AF0EA571F80477 /* Pods_smack_slack_clone_smack_slack_cloneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882AAF95C8D667ACADCCE3E4 /* Pods_smack_slack_clone_smack_slack_cloneUITests.framework */; };
 		8D3A94B823E9183600EFC4E7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A94B623E9183600EFC4E7 /* SWRevealViewController.m */; };
+		8D3A94BD23E91B6D00EFC4E7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A94BC23E91B6D00EFC4E7 /* ChatViewController.swift */; };
+		8D3A94BF23E91B8700EFC4E7 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A94BE23E91B8700EFC4E7 /* ChannelViewController.swift */; };
 		8DA5919623E7DD86008A0AC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5919523E7DD86008A0AC7 /* AppDelegate.swift */; };
 		8DA5919823E7DD86008A0AC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5919723E7DD86008A0AC7 /* SceneDelegate.swift */; };
-		8DA5919A23E7DD86008A0AC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5919923E7DD86008A0AC7 /* ViewController.swift */; };
 		8DA5919D23E7DD86008A0AC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA5919B23E7DD86008A0AC7 /* Main.storyboard */; };
 		8DA5919F23E7DD87008A0AC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA5919E23E7DD87008A0AC7 /* Assets.xcassets */; };
 		8DA591A223E7DD87008A0AC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA591A023E7DD87008A0AC7 /* LaunchScreen.storyboard */; };
 		8DA591AD23E7DD87008A0AC7 /* smack_slack_cloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA591AC23E7DD87008A0AC7 /* smack_slack_cloneTests.swift */; };
 		8DA591B823E7DD87008A0AC7 /* smack_slack_cloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA591B723E7DD87008A0AC7 /* smack_slack_cloneUITests.swift */; };
+		8DAA8AB923EAEE240054A6A2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA8AB823EAEE240054A6A2 /* GradientView.swift */; };
 		990D0039ED7BA97D65530205 /* Pods_smack_slack_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9554CE3378C3A148D766A492 /* Pods_smack_slack_clone.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,10 +48,11 @@
 		8D3A94B523E9183500EFC4E7 /* smack-slack-clone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smack-slack-clone-Bridging-Header.h"; sourceTree = "<group>"; };
 		8D3A94B623E9183600EFC4E7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		8D3A94B723E9183600EFC4E7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		8D3A94BC23E91B6D00EFC4E7 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		8D3A94BE23E91B8700EFC4E7 /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
 		8DA5919223E7DD86008A0AC7 /* smack-slack-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smack-slack-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA5919523E7DD86008A0AC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DA5919723E7DD86008A0AC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8DA5919923E7DD86008A0AC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8DA5919C23E7DD86008A0AC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DA5919E23E7DD87008A0AC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DA591A123E7DD87008A0AC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 		8DA591B323E7DD87008A0AC7 /* smack-slack-cloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "smack-slack-cloneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA591B723E7DD87008A0AC7 /* smack_slack_cloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smack_slack_cloneUITests.swift; sourceTree = "<group>"; };
 		8DA591B923E7DD87008A0AC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DAA8AB823EAEE240054A6A2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		9554CE3378C3A148D766A492 /* Pods_smack_slack_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smack_slack_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26BC72A1763A7D54ACA0ED4 /* Pods-smack-slack-clone-smack-slack-cloneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack-slack-clone-smack-slack-cloneUITests.debug.xcconfig"; path = "Target Support Files/Pods-smack-slack-clone-smack-slack-cloneUITests/Pods-smack-slack-clone-smack-slack-cloneUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA3606206DE151D8F55E4C99 /* Pods-smack-slack-clone-smack-slack-cloneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack-slack-clone-smack-slack-cloneUITests.release.xcconfig"; path = "Target Support Files/Pods-smack-slack-clone-smack-slack-cloneUITests/Pods-smack-slack-clone-smack-slack-cloneUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +109,30 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8D3A94B923E91AE000EFC4E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D3A94BC23E91B6D00EFC4E7 /* ChatViewController.swift */,
+				8D3A94BE23E91B8700EFC4E7 /* ChannelViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8D3A94BA23E91B4700EFC4E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DAA8AB823EAEE240054A6A2 /* GradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D3A94BB23E91B4E00EFC4E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8DA5918923E7DD86008A0AC7 = {
 			isa = PBXGroup;
 			children = (
@@ -131,9 +159,11 @@
 		8DA5919423E7DD86008A0AC7 /* smack-slack-clone */ = {
 			isa = PBXGroup;
 			children = (
+				8D3A94BB23E91B4E00EFC4E7 /* Model */,
+				8D3A94BA23E91B4700EFC4E7 /* View */,
+				8D3A94B923E91AE000EFC4E7 /* Controller */,
 				8DA5919523E7DD86008A0AC7 /* AppDelegate.swift */,
 				8DA5919723E7DD86008A0AC7 /* SceneDelegate.swift */,
-				8DA5919923E7DD86008A0AC7 /* ViewController.swift */,
 				8DA5919B23E7DD86008A0AC7 /* Main.storyboard */,
 				8DA5919E23E7DD87008A0AC7 /* Assets.xcassets */,
 				8DA591A023E7DD87008A0AC7 /* LaunchScreen.storyboard */,
@@ -423,10 +453,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DA5919A23E7DD86008A0AC7 /* ViewController.swift in Sources */,
 				8DA5919623E7DD86008A0AC7 /* AppDelegate.swift in Sources */,
 				8DA5919823E7DD86008A0AC7 /* SceneDelegate.swift in Sources */,
+				8DAA8AB923EAEE240054A6A2 /* GradientView.swift in Sources */,
+				8D3A94BD23E91B6D00EFC4E7 /* ChatViewController.swift in Sources */,
 				8D3A94B823E9183600EFC4E7 /* SWRevealViewController.m in Sources */,
+				8D3A94BF23E91B8700EFC4E7 /* ChannelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
