@@ -20,6 +20,8 @@
 		8DA591AD23E7DD87008A0AC7 /* smack_slack_cloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA591AC23E7DD87008A0AC7 /* smack_slack_cloneTests.swift */; };
 		8DA591B823E7DD87008A0AC7 /* smack_slack_cloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA591B723E7DD87008A0AC7 /* smack_slack_cloneUITests.swift */; };
 		8DAA8AB923EAEE240054A6A2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA8AB823EAEE240054A6A2 /* GradientView.swift */; };
+		8DC1390223F2462A00F85A8B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1390123F2462A00F85A8B /* Constants.swift */; };
+		8DC1390423F24CBD00F85A8B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1390323F24CBD00F85A8B /* LoginViewController.swift */; };
 		990D0039ED7BA97D65530205 /* Pods_smack_slack_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9554CE3378C3A148D766A492 /* Pods_smack_slack_clone.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		8DA591B723E7DD87008A0AC7 /* smack_slack_cloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smack_slack_cloneUITests.swift; sourceTree = "<group>"; };
 		8DA591B923E7DD87008A0AC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DAA8AB823EAEE240054A6A2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		8DC1390123F2462A00F85A8B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8DC1390323F24CBD00F85A8B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9554CE3378C3A148D766A492 /* Pods_smack_slack_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smack_slack_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26BC72A1763A7D54ACA0ED4 /* Pods-smack-slack-clone-smack-slack-cloneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack-slack-clone-smack-slack-cloneUITests.debug.xcconfig"; path = "Target Support Files/Pods-smack-slack-clone-smack-slack-cloneUITests/Pods-smack-slack-clone-smack-slack-cloneUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA3606206DE151D8F55E4C99 /* Pods-smack-slack-clone-smack-slack-cloneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack-slack-clone-smack-slack-cloneUITests.release.xcconfig"; path = "Target Support Files/Pods-smack-slack-clone-smack-slack-cloneUITests/Pods-smack-slack-clone-smack-slack-cloneUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 			children = (
 				8D3A94BC23E91B6D00EFC4E7 /* ChatViewController.swift */,
 				8D3A94BE23E91B8700EFC4E7 /* ChannelViewController.swift */,
+				8DC1390323F24CBD00F85A8B /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 		8DA5919423E7DD86008A0AC7 /* smack-slack-clone */ = {
 			isa = PBXGroup;
 			children = (
+				8DC1390023F2460300F85A8B /* Utilities */,
 				8D3A94BB23E91B4E00EFC4E7 /* Model */,
 				8D3A94BA23E91B4700EFC4E7 /* View */,
 				8D3A94B923E91AE000EFC4E7 /* Controller */,
@@ -188,6 +194,14 @@
 				8DA591B923E7DD87008A0AC7 /* Info.plist */,
 			);
 			path = "smack-slack-cloneUITests";
+			sourceTree = "<group>";
+		};
+		8DC1390023F2460300F85A8B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8DC1390123F2462A00F85A8B /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		A23369296E40B2E8ADEB7AC5 /* Pods */ = {
@@ -457,6 +471,8 @@
 				8DA5919823E7DD86008A0AC7 /* SceneDelegate.swift in Sources */,
 				8DAA8AB923EAEE240054A6A2 /* GradientView.swift in Sources */,
 				8D3A94BD23E91B6D00EFC4E7 /* ChatViewController.swift in Sources */,
+				8DC1390423F24CBD00F85A8B /* LoginViewController.swift in Sources */,
+				8DC1390223F2462A00F85A8B /* Constants.swift in Sources */,
 				8D3A94B823E9183600EFC4E7 /* SWRevealViewController.m in Sources */,
 				8D3A94BF23E91B8700EFC4E7 /* ChannelViewController.swift in Sources */,
 			);
