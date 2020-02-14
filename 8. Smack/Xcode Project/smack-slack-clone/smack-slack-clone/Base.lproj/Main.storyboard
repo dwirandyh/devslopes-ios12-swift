@@ -402,12 +402,29 @@
                         <outlet property="userImage" destination="0f8-NQ-Cct" id="9dQ-on-q4w"/>
                         <outlet property="usernameText" destination="Ohr-q4-OtK" id="aNu-eH-6Cn"/>
                         <segue destination="v0r-36-WQI" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="ny3-iG-pKm"/>
+                        <segue destination="YFr-U9-UgX" kind="show" identifier="toAvatarPicker" id="evk-iL-cvV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gU8-Jv-h8f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="v0r-36-WQI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2462" y="-146"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ODL-rF-6AI">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="YFr-U9-UgX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3kZ-Kc-bSo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="FOt-FE-Z1G"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OaM-ga-htl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="70n-4E-rYC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3244" y="-146"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="3r4-Fq-qu0">
