@@ -235,13 +235,19 @@
                                     <action selector="loginPressed:" destination="4V9-Cy-qgp" eventType="touchUpInside" id="M7b-QO-gED"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="XGs-7k-T9s">
+                                <rect key="frame" x="169" y="235" width="37" height="37"/>
+                                <color key="color" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="qXm-Wk-aea" firstAttribute="top" secondItem="eIB-X8-ePd" secondAttribute="bottom" constant="60" id="06f-gd-tkK"/>
                             <constraint firstItem="eIB-X8-ePd" firstAttribute="centerX" secondItem="NvD-s2-wgm" secondAttribute="centerX" id="8Oh-jU-Orm"/>
+                            <constraint firstItem="XGs-7k-T9s" firstAttribute="centerX" secondItem="NvD-s2-wgm" secondAttribute="centerX" id="Dpi-sq-JeD"/>
                             <constraint firstItem="kDB-Rw-g5Y" firstAttribute="top" secondItem="gDm-ov-THf" secondAttribute="bottom" constant="8" id="FJR-c1-MTn"/>
                             <constraint firstItem="gDm-ov-THf" firstAttribute="centerX" secondItem="NvD-s2-wgm" secondAttribute="centerX" id="Iox-mU-twf"/>
+                            <constraint firstItem="XGs-7k-T9s" firstAttribute="centerY" secondItem="NvD-s2-wgm" secondAttribute="centerY" constant="-80" id="JXr-oh-Bba"/>
                             <constraint firstItem="gDm-ov-THf" firstAttribute="top" secondItem="qXm-Wk-aea" secondAttribute="bottom" constant="30" id="QfA-VG-UwS"/>
                             <constraint firstItem="qXm-Wk-aea" firstAttribute="centerX" secondItem="NvD-s2-wgm" secondAttribute="centerX" id="XdX-1N-oZd"/>
                             <constraint firstItem="kDB-Rw-g5Y" firstAttribute="centerX" secondItem="NvD-s2-wgm" secondAttribute="centerX" id="sBb-Lq-gHq"/>
@@ -254,6 +260,7 @@
                     <navigationItem key="navigationItem" id="p82-KH-8hM"/>
                     <connections>
                         <outlet property="passwordText" destination="sk9-t6-6UW" id="LX2-lL-2N0"/>
+                        <outlet property="spinner" destination="XGs-7k-T9s" id="1I8-7h-BIR"/>
                         <outlet property="usernameText" destination="Cez-pJ-cfd" id="Xkc-9L-naY"/>
                         <segue destination="QFs-3n-0hN" kind="show" identifier="toCreateAccount" id="rmw-5K-g3w"/>
                     </connections>
