@@ -71,32 +71,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7B805BCC-CB5A-45B2-A4D1-68500FB1B769"
+            uuid = "9D6FF39A-F1DA-4000-867A-6DA81F3C187B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "smack-slack-clone/Controller/LoginViewController.swift"
+            filePath = "smack-slack-clone/Services/AuthService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "loginPressed(_:)"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
+            landmarkName = "findUserByEmail(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BEFDB59A-EA0C-418C-AF27-30E3CE5264FF"
+            uuid = "7482EFC3-83DA-4BEF-A244-87981FEC2DD4"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "smack-slack-clone/Controller/LoginViewController.swift"
+            filePath = "smack-slack-clone/Services/AuthService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "loginPressed(_:)"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "findUserByEmail(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C4CD65C-205B-4AA6-86FE-49722CD77F36"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "smack-slack-clone/Services/AuthService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "findUserByEmail(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
