@@ -50,9 +50,12 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTQ-VW-Uy2">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTQ-VW-Uy2" userLabel="Add Channel">
                                         <rect key="frame" x="273" y="91" width="22" height="22"/>
                                         <state key="normal" image="addChannelButton"/>
+                                        <connections>
+                                            <action selector="addChannelButtonPressed:" destination="FGT-Kc-QxK" eventType="touchUpInside" id="zrP-PF-zCH"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="YoS-jN-IHg" customClass="CircleImage" customModule="smack_slack_clone" customModuleProvider="target">
                                         <rect key="frame" x="20" y="567" width="60" height="60"/>
