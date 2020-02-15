@@ -43,7 +43,7 @@ class CreateAccountViewController: UIViewController {
     }
     
     @IBAction func createAccountPressed(_ sender: Any) {
-        spinner.isHidden = true
+        spinner.isHidden = false
         spinner.startAnimating()
         
         guard let name = usernameText.text, usernameText.text != "" else { return }

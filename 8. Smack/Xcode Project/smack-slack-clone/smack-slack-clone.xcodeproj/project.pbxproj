@@ -13,6 +13,8 @@
 		8D02827823F6505800FC8C09 /* AvatarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D02827723F6505800FC8C09 /* AvatarPickerViewController.swift */; };
 		8D02827A23F652DE00FC8C09 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D02827923F652DE00FC8C09 /* AvatarCell.swift */; };
 		8D06A89923F7E03000E3C528 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D06A89823F7E03000E3C528 /* CircleImage.swift */; };
+		8D06A89D23F7EE2C00E3C528 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D06A89B23F7EE2C00E3C528 /* ProfileViewController.swift */; };
+		8D06A89E23F7EE2C00E3C528 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D06A89C23F7EE2C00E3C528 /* ProfileViewController.xib */; };
 		8D3A94B823E9183600EFC4E7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A94B623E9183600EFC4E7 /* SWRevealViewController.m */; };
 		8D3A94BD23E91B6D00EFC4E7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A94BC23E91B6D00EFC4E7 /* ChatViewController.swift */; };
 		8D3A94BF23E91B8700EFC4E7 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A94BE23E91B8700EFC4E7 /* ChannelViewController.swift */; };
@@ -58,6 +60,8 @@
 		8D02827723F6505800FC8C09 /* AvatarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerViewController.swift; sourceTree = "<group>"; };
 		8D02827923F652DE00FC8C09 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		8D06A89823F7E03000E3C528 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		8D06A89B23F7EE2C00E3C528 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8D06A89C23F7EE2C00E3C528 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		8D3A94B523E9183500EFC4E7 /* smack-slack-clone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smack-slack-clone-Bridging-Header.h"; sourceTree = "<group>"; };
 		8D3A94B623E9183600EFC4E7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		8D3A94B723E9183600EFC4E7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -117,6 +121,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D06A89A23F7EE0500E3C528 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				8D06A89C23F7EE2C00E3C528 /* ProfileViewController.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		8D3A94B423E917DB00EFC4E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +147,7 @@
 				8DC1390323F24CBD00F85A8B /* LoginViewController.swift */,
 				8DC1390523F253D400F85A8B /* CreateAccountViewController.swift */,
 				8D02827723F6505800FC8C09 /* AvatarPickerViewController.swift */,
+				8D06A89B23F7EE2C00E3C528 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +205,7 @@
 		8DA5919423E7DD86008A0AC7 /* smack-slack-clone */ = {
 			isa = PBXGroup;
 			children = (
+				8D06A89A23F7EE0500E3C528 /* XIBs */,
 				8DA1CD7C23F59DF4008BB80E /* Services */,
 				8DC1390023F2460300F85A8B /* Utilities */,
 				8D3A94BB23E91B4E00EFC4E7 /* Model */,
@@ -368,6 +382,7 @@
 			files = (
 				8DA591A223E7DD87008A0AC7 /* LaunchScreen.storyboard in Resources */,
 				8DA5919F23E7DD87008A0AC7 /* Assets.xcassets in Resources */,
+				8D06A89E23F7EE2C00E3C528 /* ProfileViewController.xib in Resources */,
 				8DA5919D23E7DD86008A0AC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +517,7 @@
 				8DAA8AB923EAEE240054A6A2 /* GradientView.swift in Sources */,
 				8D3A94BD23E91B6D00EFC4E7 /* ChatViewController.swift in Sources */,
 				8DC1390423F24CBD00F85A8B /* LoginViewController.swift in Sources */,
+				8D06A89D23F7EE2C00E3C528 /* ProfileViewController.swift in Sources */,
 				8DC1390223F2462A00F85A8B /* Constants.swift in Sources */,
 				8D02827623F6434B00FC8C09 /* UserDataService.swift in Sources */,
 				8DA1CD8023F5A7A3008BB80E /* RoundedButton.swift in Sources */,
