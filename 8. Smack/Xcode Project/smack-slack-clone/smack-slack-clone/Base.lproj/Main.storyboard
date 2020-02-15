@@ -76,7 +76,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="WSF-sr-dtj">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="channelCell" id="WSF-sr-dtj" customClass="ChannelCell" customModule="smack_slack_clone" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WSF-sr-dtj" id="3ws-5A-8ha">
@@ -96,6 +96,9 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outlet property="channelNameLabel" destination="kyv-1m-E5e" id="1ID-Se-yvH"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -132,6 +135,7 @@
                         <viewLayoutGuide key="safeArea" id="rIx-d3-wmt"/>
                     </view>
                     <connections>
+                        <outlet property="channelTableView" destination="RkG-SC-If0" id="Kw5-e2-QNn"/>
                         <outlet property="loginButton" destination="kSq-Na-Hwp" id="qIk-1y-Uda"/>
                         <outlet property="userImage" destination="YoS-jN-IHg" id="yMC-hw-NOm"/>
                         <segue destination="4V9-Cy-qgp" kind="show" identifier="toLogin" id="Uj2-QV-0NM"/>
