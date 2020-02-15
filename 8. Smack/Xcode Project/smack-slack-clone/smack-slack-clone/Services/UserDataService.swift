@@ -26,4 +26,8 @@ class UserDataService {
         self.name = name
     }
     
+    func setAvatarName(name: String){
+        self.avatarName = name
+    }
+    
 }
