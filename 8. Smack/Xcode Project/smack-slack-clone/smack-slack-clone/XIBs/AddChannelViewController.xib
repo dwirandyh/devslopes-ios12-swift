@@ -10,6 +10,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddChannelViewController" customModule="smack_slack_clone" customModuleProvider="target">
             <connections>
                 <outlet property="backgroundView" destination="5W8-KY-Nz4" id="nke-Ne-ySv"/>
+                <outlet property="descriptionText" destination="Q4B-4Q-BP7" id="rwt-Vc-0HL"/>
+                <outlet property="nameText" destination="xaL-7A-6SL" id="Qwo-A6-Tsw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -74,7 +76,7 @@
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q4B-4Q-BP7">
                                     <rect key="frame" x="0.0" y="53.666666666666686" width="250" height="20"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPD-9k-gNG">
                                     <rect key="frame" x="0.0" y="87.666666666666686" width="250" height="2"/>

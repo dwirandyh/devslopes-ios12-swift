@@ -21,7 +21,13 @@ class AddChannelViewController: UIViewController {
     }
     
     @IBAction func createChannelPressed(_ sender: Any) {
-        
+        guard let channelName = nameText.text, nameText.text != "" else { return }
+        guard let channelDescription = descriptionText.text, descriptionText.text != "" else { return }
+        SocketService.instance.addChannel(channelName: channelName, channelDescription: channelDescription) { (isSuccess) in
+            if isSuccess {
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
     }
     
     @IBAction func closeButtonPressed(_ sender: Any) {
