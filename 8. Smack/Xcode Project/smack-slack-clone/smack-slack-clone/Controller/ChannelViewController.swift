@@ -25,6 +25,7 @@ class ChannelViewController: UIViewController {
         
         self.revealViewController()?.rearViewRevealWidth = self.view.frame.size.width - 60
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelViewController.userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ChannelViewController.channelsLoaded(_:)), name: NOTIF_CHANNELS_LOADED, object: nil)
         
         SocketService.instance.getChannel { (isSuccess) in
             if isSuccess {
@@ -49,13 +50,19 @@ class ChannelViewController: UIViewController {
     }
     
     @IBAction func addChannelButtonPressed(_ sender: Any) {
-        let addChannel = AddChannelViewController()
-        addChannel.modalPresentationStyle = .custom
-        present(addChannel, animated: true, completion: nil)
+        if AuthService.instance.isLoggedIn {
+            let addChannel = AddChannelViewController()
+            addChannel.modalPresentationStyle = .custom
+            present(addChannel, animated: true, completion: nil)
+        }
     }
     
     @objc func userDataDidChange(_ notification: Notification){
         setupUserInfo()
+    }
+    
+    @objc func channelsLoaded(_ notification: Notification){
+        self.channelTableView.reloadData()
     }
     
     func setupUserInfo(){
@@ -67,6 +74,7 @@ class ChannelViewController: UIViewController {
             loginButton.setTitle("Login", for: .normal)
             userImage.image = UIImage(named: "menuProfileIcon")
             userImage.backgroundColor = UIColor.clear
+            self.channelTableView.reloadData()
         }
     }
 }
@@ -94,5 +102,10 @@ extension ChannelViewController : UITableViewDataSource {
 }
 
 extension ChannelViewController : UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let channel = MessageService.instance.channels[indexPath.row]
+        MessageService.instance.selectedChannel = channel
+        NotificationCenter.default.post(name: NOTIF_CHANNEL_SELECTED, object: nil)
+        self.revealViewController()?.revealToggle(animated: true)
+    }
 }
