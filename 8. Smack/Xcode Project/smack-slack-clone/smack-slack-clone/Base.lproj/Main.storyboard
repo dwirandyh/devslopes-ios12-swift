@@ -556,10 +556,25 @@
                                     <constraint firstItem="S9H-4B-dqz" firstAttribute="centerX" secondItem="vfW-xQ-wyV" secondAttribute="centerX" id="txf-aE-hy7"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="st8-MJ-d27">
+                                <rect key="frame" x="8" y="625" width="359" height="34"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7el-aT-bf3">
+                                <rect key="frame" x="329" y="627" width="30" height="30"/>
+                                <state key="normal" image="send"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="gNV-FF-ZNW" firstAttribute="bottom" secondItem="st8-MJ-d27" secondAttribute="bottom" constant="8" id="4cm-h5-mYv"/>
+                            <constraint firstItem="st8-MJ-d27" firstAttribute="leading" secondItem="gNV-FF-ZNW" secondAttribute="leading" constant="8" id="I8N-6f-M97"/>
                             <constraint firstItem="vfW-xQ-wyV" firstAttribute="top" secondItem="p98-vo-GSt" secondAttribute="top" id="J1L-HU-YHf"/>
+                            <constraint firstItem="gNV-FF-ZNW" firstAttribute="trailing" secondItem="st8-MJ-d27" secondAttribute="trailing" constant="8" id="Jfm-8t-2NW"/>
+                            <constraint firstItem="7el-aT-bf3" firstAttribute="centerY" secondItem="st8-MJ-d27" secondAttribute="centerY" id="SQ2-kq-6Aw"/>
+                            <constraint firstItem="gNV-FF-ZNW" firstAttribute="trailing" secondItem="7el-aT-bf3" secondAttribute="trailing" constant="16" id="UMJ-97-hsZ"/>
                             <constraint firstItem="vfW-xQ-wyV" firstAttribute="leading" secondItem="gNV-FF-ZNW" secondAttribute="leading" id="bz9-JB-eTJ"/>
                             <constraint firstItem="vfW-xQ-wyV" firstAttribute="trailing" secondItem="gNV-FF-ZNW" secondAttribute="trailing" id="jsQ-ab-avE"/>
                         </constraints>
@@ -568,11 +583,12 @@
                     <connections>
                         <outlet property="channelNameLabel" destination="S9H-4B-dqz" id="An8-7G-gIc"/>
                         <outlet property="menuButton" destination="n8y-BV-0v3" id="cF4-15-JJE"/>
+                        <outlet property="messageText" destination="st8-MJ-d27" id="Bnd-od-S8w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Fh-OM-7vX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="914.39999999999998" y="534.23645320197045"/>
+            <point key="canvasLocation" x="914.39999999999998" y="533.88305847076469"/>
         </scene>
     </scenes>
     <resources>
@@ -580,6 +596,7 @@
         <image name="closeButton" width="28" height="28"/>
         <image name="menuProfileIcon" width="99" height="99"/>
         <image name="profileDefault" width="192" height="192"/>
+        <image name="send" width="30" height="30"/>
         <image name="smackBack" width="28" height="28"/>
         <image name="smackBurger" width="40" height="40"/>
         <image name="smackLogo" width="48" height="40"/>
