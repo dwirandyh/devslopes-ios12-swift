@@ -6,9 +6,9 @@ target 'smack-slack-clone' do
   use_frameworks!
 
   # Pods for smack-slack-clone
-  pod 'Socket.IO-Client-Swift'
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'Socket.IO-Client-Swift'
 
   target 'smack-slack-cloneTests' do
     inherit! :search_paths
