@@ -14,7 +14,10 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var channelNameLabel: UILabel!
     @IBOutlet weak var messageText: UITextField!
     @IBOutlet weak var messageTableView: UITableView!
+    @IBOutlet weak var sendButton: UIButton!
     
+    // VARIABLES
+    var isTyping : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,8 @@ class ChatViewController: UIViewController {
         
         self.messageTableView.delegate = self
         self.messageTableView.dataSource = self
+        
+        self.sendButton.isHidden = true
         
         self.messageTableView.estimatedRowHeight = 80
         self.messageTableView.rowHeight = UITableView.automaticDimension
@@ -33,6 +38,17 @@ class ChatViewController: UIViewController {
         if AuthService.instance.isLoggedIn {
             AuthService.instance.findUserByEmail { (isSuccess) in
                 NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+            }
+        }
+        
+        SocketService.instance.getChatMessage { (isSuccess) in
+            if isSuccess {
+                self.messageTableView.reloadData()
+                if MessageService.instance.messages.count > 0 {
+                    let messageRow = MessageService.instance.messages.count - 1
+                    let endIndex = IndexPath(row: messageRow, section: 0)
+                    self.messageTableView.scrollToRow(at: endIndex, at: .bottom, animated: false)
+                }
             }
         }
     }
@@ -61,6 +77,7 @@ class ChatViewController: UIViewController {
             onLoginGetMessages()
         } else {
             channelNameLabel.text = "Please Log In"
+            self.messageTableView.reloadData()
         }
     }
     
@@ -109,6 +126,18 @@ class ChatViewController: UIViewController {
                     self.messageText.resignFirstResponder()
                 }
             }
+        }
+    }
+    
+    @IBAction func messageBoxEditing(_ sender: Any) {
+        if messageText.text?.isEmpty == true {
+            isTyping = false
+            sendButton.isHidden = true
+        } else {
+            if isTyping == false {
+                sendButton.isHidden = false
+            }
+            isTyping = true
         }
     }
     

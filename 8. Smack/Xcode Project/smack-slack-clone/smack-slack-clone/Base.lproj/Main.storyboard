@@ -561,10 +561,16 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="messageBoxEditing:" destination="jBb-KS-4hE" eventType="editingChanged" id="2nV-ID-SGL"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7el-aT-bf3">
                                 <rect key="frame" x="329" y="627" width="30" height="30"/>
                                 <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="sendMessagePressed:" destination="jBb-KS-4hE" eventType="touchUpInside" id="nMm-Eb-i2R"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2uy-5e-2rC">
                                 <rect key="frame" x="0.0" y="90" width="375" height="527"/>
@@ -648,6 +654,7 @@
                         <outlet property="menuButton" destination="n8y-BV-0v3" id="cF4-15-JJE"/>
                         <outlet property="messageTableView" destination="2uy-5e-2rC" id="Fv4-u7-e5g"/>
                         <outlet property="messageText" destination="st8-MJ-d27" id="Bnd-od-S8w"/>
+                        <outlet property="sendButton" destination="7el-aT-bf3" id="uPS-VP-4t2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Fh-OM-7vX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
