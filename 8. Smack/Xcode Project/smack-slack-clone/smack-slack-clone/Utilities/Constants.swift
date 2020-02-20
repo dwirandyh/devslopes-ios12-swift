@@ -10,6 +10,7 @@ import Foundation
 
 typealias CompletionHandler = (_ success: Bool) -> ()
 
+
 // URLs
 let BASE_URL = "https://chattychatjb.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"

@@ -573,7 +573,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2uy-5e-2rC">
-                                <rect key="frame" x="0.0" y="90" width="375" height="527"/>
+                                <rect key="frame" x="0.0" y="90" width="375" height="505"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="80" id="BF4-3a-fe9" customClass="MessageCell" customModule="smack_slack_clone" customModuleProvider="target">
@@ -631,6 +631,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whr-Mh-hkP">
+                                <rect key="frame" x="8" y="617" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -642,9 +648,11 @@
                             <constraint firstItem="vfW-xQ-wyV" firstAttribute="top" secondItem="p98-vo-GSt" secondAttribute="top" id="J1L-HU-YHf"/>
                             <constraint firstItem="gNV-FF-ZNW" firstAttribute="trailing" secondItem="st8-MJ-d27" secondAttribute="trailing" constant="8" id="Jfm-8t-2NW"/>
                             <constraint firstItem="7el-aT-bf3" firstAttribute="centerY" secondItem="st8-MJ-d27" secondAttribute="centerY" id="SQ2-kq-6Aw"/>
-                            <constraint firstItem="st8-MJ-d27" firstAttribute="top" secondItem="2uy-5e-2rC" secondAttribute="bottom" constant="8" id="STq-ro-zdl"/>
+                            <constraint firstItem="st8-MJ-d27" firstAttribute="top" secondItem="2uy-5e-2rC" secondAttribute="bottom" constant="30" id="STq-ro-zdl"/>
                             <constraint firstItem="gNV-FF-ZNW" firstAttribute="trailing" secondItem="7el-aT-bf3" secondAttribute="trailing" constant="16" id="UMJ-97-hsZ"/>
                             <constraint firstItem="vfW-xQ-wyV" firstAttribute="leading" secondItem="gNV-FF-ZNW" secondAttribute="leading" id="bz9-JB-eTJ"/>
+                            <constraint firstItem="Whr-Mh-hkP" firstAttribute="leading" secondItem="gNV-FF-ZNW" secondAttribute="leading" constant="8" id="eSp-EZ-Lpd"/>
+                            <constraint firstItem="st8-MJ-d27" firstAttribute="top" secondItem="Whr-Mh-hkP" secondAttribute="bottom" constant="8" id="fiK-Q8-WT4"/>
                             <constraint firstItem="vfW-xQ-wyV" firstAttribute="trailing" secondItem="gNV-FF-ZNW" secondAttribute="trailing" id="jsQ-ab-avE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gNV-FF-ZNW"/>
@@ -655,6 +663,7 @@
                         <outlet property="messageTableView" destination="2uy-5e-2rC" id="Fv4-u7-e5g"/>
                         <outlet property="messageText" destination="st8-MJ-d27" id="Bnd-od-S8w"/>
                         <outlet property="sendButton" destination="7el-aT-bf3" id="uPS-VP-4t2"/>
+                        <outlet property="typingUsersLabel" destination="Whr-Mh-hkP" id="PKz-MH-u6p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Fh-OM-7vX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
