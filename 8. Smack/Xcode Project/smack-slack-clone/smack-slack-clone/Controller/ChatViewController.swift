@@ -13,12 +13,19 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var channelNameLabel: UILabel!
     @IBOutlet weak var messageText: UITextField!
+    @IBOutlet weak var messageTableView: UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.bindTextFieldToKeyboard()
+        
+        self.messageTableView.delegate = self
+        self.messageTableView.dataSource = self
+        
+        self.messageTableView.estimatedRowHeight = 80
+        self.messageTableView.rowHeight = UITableView.automaticDimension
         
         self.initMenuButton()
         self.initNotificationObserver()
@@ -88,7 +95,7 @@ class ChatViewController: UIViewController {
     func getMessages(){
         guard let channelId = MessageService.instance.selectedChannel?.id else { return }
         MessageService.instance.findAllMessagesForChannel(channelId: channelId) { (success) in
-            
+            self.messageTableView.reloadData()
         }
     }
     
@@ -104,5 +111,29 @@ class ChatViewController: UIViewController {
             }
         }
     }
+    
+}
+
+extension ChatViewController : UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        MessageService.instance.messages.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell", for: indexPath) as? MessageCell {
+            let message = MessageService.instance.messages[indexPath.row]
+            cell.configureCell(message: message)
+            return cell
+        }else {
+            return UITableViewCell()
+        }
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+}
+
+extension ChatViewController : UITableViewDelegate {
     
 }

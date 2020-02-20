@@ -33,6 +33,7 @@
 		8DC1390223F2462A00F85A8B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1390123F2462A00F85A8B /* Constants.swift */; };
 		8DC1390423F24CBD00F85A8B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1390323F24CBD00F85A8B /* LoginViewController.swift */; };
 		8DC1390623F253D400F85A8B /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1390523F253D400F85A8B /* CreateAccountViewController.swift */; };
+		8DD6994B23FE36A5004A9D18 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6994A23FE36A5004A9D18 /* MessageCell.swift */; };
 		8DF4F33223F83A8B003F874F /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4F33123F83A8B003F874F /* MessageService.swift */; };
 		8DF4F33423F83E86003F874F /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4F33323F83E86003F874F /* Channel.swift */; };
 		8DF4F33623F84435003F874F /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4F33523F84435003F874F /* ChannelCell.swift */; };
@@ -96,6 +97,7 @@
 		8DC1390123F2462A00F85A8B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8DC1390323F24CBD00F85A8B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8DC1390523F253D400F85A8B /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		8DD6994A23FE36A5004A9D18 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		8DF4F33123F83A8B003F874F /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		8DF4F33323F83E86003F874F /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		8DF4F33523F84435003F874F /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				8D06A89823F7E03000E3C528 /* CircleImage.swift */,
 				8DF4F33523F84435003F874F /* ChannelCell.swift */,
 				8D6F989F23FD3C2E00A5E075 /* KeyboardBoundView.swift */,
+				8DD6994A23FE36A5004A9D18 /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				8DA1CD8023F5A7A3008BB80E /* RoundedButton.swift in Sources */,
 				8D940C6F23F8ED6E003671AD /* SocketService.swift in Sources */,
 				8DC1390623F253D400F85A8B /* CreateAccountViewController.swift in Sources */,
+				8DD6994B23FE36A5004A9D18 /* MessageCell.swift in Sources */,
 				8DA1CD7E23F59E0E008BB80E /* AuthService.swift in Sources */,
 				8DF9787E23FA3AED00BFF50B /* Message.swift in Sources */,
 				8D3A94B823E9183600EFC4E7 /* SWRevealViewController.m in Sources */,
