@@ -42,16 +42,28 @@ class ChatViewController: UIViewController {
             }
         }
         
-        SocketService.instance.getChatMessage { (isSuccess) in
-            if isSuccess {
+        SocketService.instance.getChatMessage { (newMessage) in
+            if newMessage.channelId == MessageService.instance.selectedChannel?.id && AuthService.instance.isLoggedIn {
+                MessageService.instance.messages.append(newMessage)
                 self.messageTableView.reloadData()
                 if MessageService.instance.messages.count > 0 {
-                    let messageRow = MessageService.instance.messages.count - 1
-                    let endIndex = IndexPath(row: messageRow, section: 0)
-                    self.messageTableView.scrollToRow(at: endIndex, at: .bottom, animated: false)
+                    let endIndex = MessageService.instance.messages.count - 1
+                    let endIndexPath = IndexPath(row: endIndex, section: 0)
+                    self.messageTableView.scrollToRow(at: endIndexPath, at: .bottom, animated: false)
                 }
             }
         }
+        
+//        SocketService.instance.getChatMessage { (isSuccess) in
+//            if isSuccess {
+//                self.messageTableView.reloadData()
+//                if MessageService.instance.messages.count > 0 {
+//                    let messageRow = MessageService.instance.messages.count - 1
+//                    let endIndex = IndexPath(row: messageRow, section: 0)
+//                    self.messageTableView.scrollToRow(at: endIndex, at: .bottom, animated: false)
+//                }
+//            }
+//        }
         
         SocketService.instance.getTypingUser { (typingUsers) in
             guard let channelId = MessageService.instance.selectedChannel?.id else { return }
