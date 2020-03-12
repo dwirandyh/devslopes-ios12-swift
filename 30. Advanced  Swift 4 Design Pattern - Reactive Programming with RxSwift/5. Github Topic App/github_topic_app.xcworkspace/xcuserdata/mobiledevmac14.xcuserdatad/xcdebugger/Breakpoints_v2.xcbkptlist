@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C0B75D5E-BBD2-491F-A536-DD6A5CDF6802"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A4BDDAB4-A809-4134-935E-06C65C0D88F7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "github_topic_app/Services/DownloadService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "mapToRepo(fromDictionary:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13E3B3EE-A858-43CC-B772-DCF505A6BD5D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "github_topic_app/Services/DownloadService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "downloadContributorsDataFor(contributorsUrl:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A3302E8-C3BD-4917-9931-A900DB75D547"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "github_topic_app/Services/DownloadService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "mapToRepo(fromDictionary:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9A3302E8-C3BD-4917-9931-A900DB75D547 - df464db88e5faa69"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIImage) -&gt; () in github_topic_app.DownloadService.(mapToRepo in _9AF61C48ADB05674E0C9D867C5655193)(fromDictionary: Swift.Dictionary&lt;Swift.String, Any&gt;, completion: (github_topic_app.Repo) -&gt; ()) -&gt; ()"
+                  moduleName = "github_topic_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mobiledevmac14/%23Data%20Randy/My%20Lab/IOS%20Development/ios-reactive-programming/5.%20Github%20Topic%20App/github_topic_app/Services/DownloadService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "578">
+               </Location>
+               <Location
+                  uuid = "9A3302E8-C3BD-4917-9931-A900DB75D547 - c5ecc2fb0823fd4b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Int) -&gt; () in closure #1 (__C.UIImage) -&gt; () in github_topic_app.DownloadService.(mapToRepo in _9AF61C48ADB05674E0C9D867C5655193)(fromDictionary: Swift.Dictionary&lt;Swift.String, Any&gt;, completion: (github_topic_app.Repo) -&gt; ()) -&gt; ()"
+                  moduleName = "github_topic_app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mobiledevmac14/%23Data%20Randy/My%20Lab/IOS%20Development/ios-reactive-programming/5.%20Github%20Topic%20App/github_topic_app/Services/DownloadService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "175">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1BC2C2AB-3747-4BF6-AFED-DAB936C17D2B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "github_topic_app/View/SearchCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "configureCell(repo:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

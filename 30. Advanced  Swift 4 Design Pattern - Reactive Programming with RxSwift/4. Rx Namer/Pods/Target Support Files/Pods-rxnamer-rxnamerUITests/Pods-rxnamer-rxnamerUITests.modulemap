@@ -1,0 +1,6 @@
+framework module Pods_rxnamer_rxnamerUITests {
+  umbrella header "Pods-rxnamer-rxnamerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
