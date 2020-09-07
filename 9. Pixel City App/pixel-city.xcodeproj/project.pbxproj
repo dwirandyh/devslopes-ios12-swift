@@ -14,6 +14,7 @@
 		8D2A04E725065A6000D03EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D2A04E625065A6000D03EAF /* Assets.xcassets */; };
 		8D2A04EA25065A6000D03EAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D2A04E825065A6000D03EAF /* LaunchScreen.storyboard */; };
 		8D2A04F625065E7500D03EAF /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2A04F525065E7500D03EAF /* MapVC.swift */; };
+		8D3D26FC25068499005E8F73 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D26FB25068499005E8F73 /* DroppablePin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8D2A04E925065A6000D03EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D2A04EB25065A6000D03EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D2A04F525065E7500D03EAF /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		8D3D26FB25068499005E8F73 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
 		B017E057C7F35F0FAE4AEB8A /* Pods_pixel_city.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pixel_city.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7579900A44A91C205F55979 /* Pods-pixel-city.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixel-city.debug.xcconfig"; path = "Target Support Files/Pods-pixel-city/Pods-pixel-city.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 		8D2A04F325065E3600D03EAF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8D3D26FB25068499005E8F73 /* DroppablePin.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D2A04DE25065A5D00D03EAF /* AppDelegate.swift in Sources */,
+				8D3D26FC25068499005E8F73 /* DroppablePin.swift in Sources */,
 				8D2A04F625065E7500D03EAF /* MapVC.swift in Sources */,
 				8D2A04E025065A5D00D03EAF /* SceneDelegate.swift in Sources */,
 			);

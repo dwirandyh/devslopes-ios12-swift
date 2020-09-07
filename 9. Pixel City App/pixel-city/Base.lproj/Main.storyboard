@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8I-tE-slK">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8I-tE-slK">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="567"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ar-3v-y54">
@@ -76,6 +76,8 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="M8I-tE-slK" id="fIe-T2-vcS"/>
+                        <outlet property="pullUpView" destination="Kut-0l-98h" id="L5U-NF-FQT"/>
+                        <outlet property="pullUpViewHeight" destination="dzy-np-i7H" id="IkI-Gz-rUS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
