@@ -277,4 +277,16 @@ extension MapVC: UICollectionViewDelegate, UICollectionViewDataSource {
         popVC.initData(forImage: imageArray[indexPath.row])
         present(popVC, animated: true, completion: nil)
     }
+
+    func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+        return UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { suggestedActions in
+            let share = UIAction(title: "Show", image: UIImage(systemName: "magnifyingglass")) { action in
+                if let popVC = self.storyboard?.instantiateViewController(identifier: "PopVC") as? PopVC {
+                    popVC.initData(forImage: self.imageArray[indexPath.row])
+                    self.present(popVC, animated: true, completion: nil)
+                }
+            }
+            return UIMenu(title: "", children: [share])
+        }
+    }
 }
